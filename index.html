@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Wristo Portal</title>
+ <!--  <link rel="stylesheet" href="style/styles.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- Header==================================================-->
+    <header class="header">
+      <a> 
+        <div id="logo">
+          <img src="style/img/logo.png">
+        </div>
+      </a>
+      <div class="navbar">
+        <ul class="nav navbar-nav">
+            <li class="header-link active">
+                <a href="#">
+                    <span class="material-icons">view_quilt</span>
+                    <span class="hidden-sm">OVERVIEW</span>
+                </a>
+            </li>
+            <li class="header-link">
+                <a href="#reminders">
+                    <span class="material-icons">today</span> 
+                    <span class="hidden-sm">REMINDERS</span>
+                </a>
+            </li>
+            <li class="header-link">
+                <a href="#notifications">
+                    <span class="material-icons">notifications</span>
+                    <span class="hidden-sm">NOTIFICATIONS</span>
+                </a>
+            </li>
+            <li class="header-link">
+                <a href="#settings">
+                    <span class="material-icons">settings</span>
+                    <span class="hidden-sm">SETTINGS</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+      <div class="registration">
+         <ul class="nav navbar-nav">
+           <li class="header-link">
+             <a href="#sing_up">Sing Up</a>
+           </li>
+           <li class="header-link">
+             <a href="#log_in">Log In</a>
+           </li>
+         </ul>
+      </div>
+    </header><!-- .header-->
+
+    <!-- Content==================================================-->
+
+       <div class="group_navigation">
+         <ul class="nav navbar-nav">
+           <li class="header-link">
+            <a href="#">
+                <span class="material-icons">group</span>
+                <span>Group 1</span>
+            </a>
+           </li>
+           <li class="header-link">
+             <a href="#">
+                <span class="material-icons">group</span>
+                <span>Group 2</span>
+            </a>
+           </li>
+           <li class="header-link">
+            <a href="#">
+            <span class="material-icons">add</span>
+           <p>Add New</p>
+            </a>
+           </li>
+      </div>
+
+      <section>
+        <div class="conteiner_name">
+          <p>Map</p>
+          <div class="map_navigations">
+            <button class="btn_navigations">
+              <span class="material-icons">loop</span>
+            </button>
+            <button class="btn_navigations">
+              <span class="material-icons">expand_less</span>
+            </button>
+            <button class="btn_navigations">
+              <span class="material-icons">close</span>
+            </button>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10294.076065049032!2d24.06292815!3d49.83270465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1501585461070"  frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <aside>
+        <div class="contacts">
+          <div class="conteiner_name">
+             <p>Contacts</p>
+            <div class="conteiner_navigations">
+              <button class="btn_navigations">
+              <span class="material-icons">expand_less</span>
+            </button>
+            <button class="btn_navigations">
+              <span class="material-icons">close</span>
+            </button>
+            </div>
+          </div>
+          <div class="option_person">
+            <button class="option option_active">Wearers</button>
+            <button class="option">Carers</button>
+          </div>
+          <div class="person">
+          <div><img src="style/img/contacts_person_1.jpg">
+            <p id="name">Kate</p></div>
+            <div><button><span class="material-icons" id="email_button">email</span></button>
+            <button><span class="material-icons" id="delete_button">delete</span></button></div>    
+          </div>
+          <div class="person">
+          <div><img src="style/img/contacts_person_2.jpg">
+            <p id="name">Linda</p></div>
+            <div><button><span class="material-icons" id="email_button">email</span></button>
+            <button><span class="material-icons" id="delete_button">delete</span></button></div>    
+          </div>
+          <div class="add-wearer">
+            <span class="material-icons add-wearer" >add</span>Add Wearer to Group
+            </div>
+        </div>
+          
+        <div class="notification">
+           <div class="conteiner_name">
+           <p>Notifications</p>
+            <div class="conteiner_navigations">
+              <button class="btn_navigations">
+              <span class="material-icons">expand_less</span>
+            </button>
+            <button class="btn_navigations">
+              <span class="material-icons">close</span>
+            </button>
+            </div>
+          </div>
+          <div class="option_person">
+            <button class="option option_active">Wearers</button>
+            <button class="option">Carers</button>
+          </div>
+          <div class="person_massage">
+          <div id="foto_person"><img src="style/img/contacts_person_2.jpg"></div>
+          <div>
+            <ul>
+              <li>Linda</li>
+              <li>2 minut ago</li>
+            </ul>
+          </div>
+            <div class="massage">sfsdfds</div>
+          </div>
+        </div>
+      </aside><!-- .right-sidebar -->
+
+
+
+
+
+</div><!-- .wrapper -->
+
+    <!-- Footer==================================================-->
+    <footer class="footer">
+  <strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+</footer><!-- .footer -->
+
+  </div>
+</body>

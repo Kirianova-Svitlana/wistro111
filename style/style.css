@@ -1,0 +1,278 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+ul li{
+  cursor: pointer;
+  text-align: center;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #6b6b6b;
+  background-color: #fff;
+}
+
+.wrapper {
+max-width: 1400px;
+margin: 0 auto;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  height: 60px;
+  background-color: #d2d2d2;
+  vertical-align: middle;
+  loat: left;
+  display: flex;
+  
+  padding-right:1%;
+}
+
+.material-icons{
+  color: #b52f54;
+}
+.header .material-icons{
+  color: #f5f5f5;
+}
+  
+#logo img{
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 42px;
+  float: left;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar ul li{
+  float: left;
+  height: 60px;
+  word-wrap: break-word;
+  overflow: hidden;
+  padding-right: 10px;
+}
+.navbar ul li span{
+  line-height: 60px;
+}
+
+.header .hidden-sm{
+  position: relative;
+  top: -8px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.registration ul{
+  display: flex;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+.registration ul li{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.active{
+  background-color:  #c1c1c1;
+}
+
+li:hover { 
+    background-color:  #c1c1c1;
+}
+/* Content
+-----------------------------------------------------------------------------*/
+.group_navigation{
+  padding-top: 1%;
+}
+.group_navigation ul li{
+  display: inline-block;
+  height: 55px;
+  width: 90px;
+  text-align: center;
+  padding: 5px 15px;
+  cursor: pointer;
+  word-wrap: break-word;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+.group_navigation ul li:hover{
+  background-color: #e1e1e1;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+  background-color: yellow;
+  width: 100%;
+  padding: 0 0 100px;
+  position: relative;
+  display:flex;
+}
+main{
+  display: inline-block;
+  background-color: red;
+  padding: 1%;
+  width: 70%;
+  float: left;
+}
+.conteiner_name{
+  background-color: #b52f54;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  height: 40px;
+  color: #f5f5f5;
+}
+aside .conteiner_name{
+  padding: 1% 6%;
+}
+.conteiner_navigations span, .conteiner_name p{
+  color: #f5f5f5;
+  font-size: 19px;
+}
+.conteiner_navigations span{
+  margin-top: 7px;
+}
+section .material-icons{
+  color: #f5f5f5;
+}
+
+section .btn_navigations, aside .btn_navigations{
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  outline: none;
+  color:#f5f5f5;
+  cursor: pointer;
+}
+
+iframe{
+  width: 100%;
+  height: 400px;
+}
+
+section {
+  padding: 1%;
+  float: left;
+  width: 70%;
+}
+aside {
+  float: right;
+  width: 30%;
+  padding: 1%;
+}
+
+aside .contacts, aside .notification{
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+aside img{
+  vertical-align: middle;
+  height: 34px;
+  width: 34px;
+  float: left;
+  margin-right: 25px;
+  border-radius: 100%;
+}
+
+aside .option{
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+ position: relative;
+  height: 40px;
+  width: 50%;
+  float: left;
+   border-bottom: 1px solid #eee;
+   cursor: pointer;
+}
+
+aside .option_active{
+  border-bottom: 2px solid #b52f54;
+}
+
+aside .option:hover{
+  border-bottom: 2px solid #b52f54;
+}
+
+aside .option_person{
+  height: 40px;
+  background-color: red;
+  position: relative;
+
+}
+
+aside .person{
+  padding: 2% 6%;
+  height: 50px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+#name{
+  float: right;
+  color: #000000;
+ 
+}
+
+aside .person button{
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+#email_button{
+  color: #000000;
+  margin: 4px;
+  cursor: pointer;
+}
+#delete_button{
+  margin: 4px;
+  cursor: pointer;
+}
+
+aside .add-wearer{
+  padding: 2% 4%;
+  height: 50px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: #BFF08E;
+}
