@@ -5,88 +5,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Wristo Portal</title>
- <!--  <link rel="stylesheet" href="style/styles.css"> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Wristo Portal</title>
+  <!--  <link rel="stylesheet" href="style/styles.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-
-    <!-- Header==================================================-->
-    <header class="header">
-      <a> 
-        <div id="logo">
-          <img src="style/img/logo.png">
-        </div>
-      </a>
-      <div class="navbar">
-        <ul class="nav navbar-nav">
-            <li class="header-link active">
-                <a href="#">
-                    <span class="material-icons">view_quilt</span>
-                    <span class="hidden-sm">OVERVIEW</span>
-                </a>
-            </li>
-            <li class="header-link">
-                <a href="#reminders">
-                    <span class="material-icons">today</span> 
-                    <span class="hidden-sm">REMINDERS</span>
-                </a>
-            </li>
-            <li class="header-link">
-                <a href="#notifications">
-                    <span class="material-icons">notifications</span>
-                    <span class="hidden-sm">NOTIFICATIONS</span>
-                </a>
-            </li>
-            <li class="header-link">
-                <a href="#settings">
-                    <span class="material-icons">settings</span>
-                    <span class="hidden-sm">SETTINGS</span>
-                </a>
-            </li>
-        </ul>
+    <header class="header_full">
+      <div class="logo">
+        <img src="style/img/logo.png">
+      </div>
+      <div class="navigation_full">
+        <ul>
+        <li><a href="#OVERVIEW">
+          <span class="material-icons">view_quilt</span>OVERVIEW
+         
+        </a></li>
+        <li><a href="#REMINDERS">
+          <span class="material-icons">today</span> REMINDERS
+          
+        </a></li>
+        <li><a href="#NOTIFICATIONS">
+          <span class="material-icons">notifications</span>NOTIFICATIONS
+      
+        </a></li>
+        <li><a href="#SETTINGS">
+          <span class="material-icons">settings</span>SETTINGS
+         
+        </a></li>
+      </ul>
       </div>
       <div class="registration">
-         <ul class="nav navbar-nav">
-           <li class="header-link">
-             <a href="#sing_up">Sing Up</a>
-           </li>
-           <li class="header-link">
-             <a href="#log_in">Log In</a>
-           </li>
-         </ul>
+        <ul>
+        <li><a href="#sing_up">Sing Up</a></li>
+        <li><a href="#log_in">Log In</a></li>
+        </ul>
+    </div>
+      
+     
+    </header>
+
+    <header class="header_toggle">
+      <div id="topNav" class="navigation">
+        <span id="closebtn" onclick="navToggle()">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+        </span>
+        <div class="logo">
+          <img src="style/img/logo.png">
+        </div>
+
+        <ul class="menulist">
+          <li><a class="menuitems" href="#">
+            <span class="material-icons">view_quilt</span>
+            <span class="hidden-sm">OVERVIEW</span>
+          </a></li>
+          <li><a class="menuitems" href="#">
+            <span class="material-icons">today</span> 
+            <span class="hidden-sm">REMINDERS</span>
+          </a></li>
+          <li><a class="menuitems" href="#">
+            <span class="material-icons">notifications</span>
+            <span class="hidden-sm">NOTIFICATIONS</span>
+          </a></li>
+          <li><a class="menuitems" href="#">
+            <span class="material-icons">settings</span>
+            <span class="hidden-sm">SETTINGS</span>
+          </a></li>
+        </ul>
       </div>
-    </header><!-- .header-->
+    </header>
 
-    <!-- Content==================================================-->
-
-       <div class="group_navigation">
-         <ul class="nav navbar-nav">
-           <li class="header-link">
+    <!-- main group navigation -->
+    <div id="main">
+      <div class="group_navigation">
+        <ul class="nav navbar-nav">
+          <li class="header-link">
             <a href="#">
-                <span class="material-icons">group</span>
-                <span>Group 1</span>
+              <span class="material-icons">group</span>
+              <span>Group 1</span>
             </a>
-           </li>
-           <li class="header-link">
-             <a href="#">
-                <span class="material-icons">group</span>
-                <span>Group 2</span>
-            </a>
-           </li>
-           <li class="header-link">
+          </li>
+          <li class="header-link">
             <a href="#">
-            <span class="material-icons">add</span>
-           <p>Add New</p>
+              <span class="material-icons">group</span>
+              <span>Group 2</span>
             </a>
-           </li>
+          </li>
+          <li class="header-link">
+            <a href="#">
+              <span class="material-icons">add</span>
+              <p>Add New</p>
+          </a>
+          </li>
+        </ul>
       </div>
-
-      <section>
+      <!-- section -->
+      <div class="row">
+      <div class="col-9 col-m-9">
         <div class="conteiner_name">
           <p>Map</p>
           <div class="map_navigations">
@@ -102,54 +122,62 @@
           </div>
         </div>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10294.076065049032!2d24.06292815!3d49.83270465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1501585461070"  frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10294.076065049032!2d24.06292815!3d49.83270465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1501585461070"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-      </section>
+      </div>
+      <!-- aside -->
+      <div class="col-3 col-m-12">
+        <div class="aside">
+          <!-- contacts -->
+          <div class="contacts">
+            <div class="conteiner_name">
+              <p>Contacts</p>
+              <div class="conteiner_navigations">
+                <button class="btn_navigations">
+                  <span class="material-icons">expand_less</span>
+                </button>
+                <button class="btn_navigations">
+                  <span class="material-icons">close</span>
+                </button>
+              </div>
+            </div>
+            <div class="option_person">
+              <button class="option option_active">Wearers</button>
+              <button class="option">Carers</button>
+            </div>
+            <div class="person">
+              <div><img src="style/img/contacts_person_1.jpg">
+                <p class="name">Kate</p>
+              </div>
+            <div>
+            <button><span class="material-icons email_button">email</span></button>
+              <button><span class="material-icons delete_button">delete</span></button></div>
+            </div>
+            <div class="person">
+              <div><img src="style/img/contacts_person_2.jpg">
+                <p class="name">Linda</p>
+              </div>
+              <div>
+                <button><span class="material-icons email_button">email</span></button>
+                <button><span class="material-icons delete_button">delete</span></button></div>
+            </div>
+            <div class="add-wearer">
+              <span class="material-icons add-wearer">add</span>Add Wearer to Group
+            </div>
+          </div>
 
-      <aside>
-        <div class="contacts">
+          <!-- notifications -->
+          <div class="notification">
           <div class="conteiner_name">
-             <p>Contacts</p>
+            <p>Notifications</p>
             <div class="conteiner_navigations">
               <button class="btn_navigations">
-              <span class="material-icons">expand_less</span>
-            </button>
-            <button class="btn_navigations">
-              <span class="material-icons">close</span>
-            </button>
-            </div>
-          </div>
-          <div class="option_person">
-            <button class="option option_active">Wearers</button>
-            <button class="option">Carers</button>
-          </div>
-          <div class="person">
-          <div><img src="style/img/contacts_person_1.jpg">
-            <p id="name">Kate</p></div>
-            <div><button><span class="material-icons" id="email_button">email</span></button>
-            <button><span class="material-icons" id="delete_button">delete</span></button></div>    
-          </div>
-          <div class="person">
-          <div><img src="style/img/contacts_person_2.jpg">
-            <p id="name">Linda</p></div>
-            <div><button><span class="material-icons" id="email_button">email</span></button>
-            <button><span class="material-icons" id="delete_button">delete</span></button></div>    
-          </div>
-          <div class="add-wearer">
-            <span class="material-icons add-wearer" >add</span>Add Wearer to Group
-            </div>
-        </div>
-          
-        <div class="notification">
-           <div class="conteiner_name">
-           <p>Notifications</p>
-            <div class="conteiner_navigations">
+                <span class="material-icons">expand_less</span>
+              </button>
               <button class="btn_navigations">
-              <span class="material-icons">expand_less</span>
-            </button>
-            <button class="btn_navigations">
-              <span class="material-icons">close</span>
-            </button>
+                <span class="material-icons">close</span>
+              </button>
             </div>
           </div>
           <div class="option_person">
@@ -157,28 +185,104 @@
             <button class="option">Carers</button>
           </div>
           <div class="person_massage">
-          <div id="foto_person"><img src="style/img/contacts_person_2.jpg"></div>
-          <div>
-            <ul>
-              <li>Linda</li>
-              <li>2 minut ago</li>
-            </ul>
+            <div class="foto_person"><img src="style/img/contacts_person_2.jpg"></div>
+            <div class="action_time">
+              <span>Linda</span>
+              <span class="material-icons lens">lens</span>
+              <span>2 mins ago</span>
+            </div>
+            <div class="massage">
+              <p> Help me please!!!</p>
+            </div>
           </div>
-            <div class="massage">sfsdfds</div>
+
+          <div class="person_massage">
+            <div class="foto_person"><img src="style/img/contacts_person_2.jpg"></div>
+            <div class="action_time">
+              <span>Linda</span>
+              <span class="material-icons lens">lens</span>
+              <span>2 mins ago</span>
+            </div>
+            <div class="massage">
+              <p> Help me please!!!</p>
+            </div>
+          </div>
+
+          <div class="person_massage">
+            <div class="foto_person"><img src="style/img/contacts_person_2.jpg"></div>
+            <div class="action_time">
+              <span>Linda</span>
+              <span class="material-icons lens">lens</span>
+              <span>2 mins ago</span>
+            </div>
+            <div class="massage">
+              <p> Help me please!!!</p>
+            </div>
+          </div>
+          <div class="person_massage">
+            <p>See All</p>
           </div>
         </div>
-      </aside><!-- .right-sidebar -->
+          <!-- end notofocations -->
+
+          <!-- add Title -->
+           <div class="add_title">
+          <p><span class="material-icons add-wearer">add</span>Add Title</p>
+        </div>
+          <!-- and add title -->
+
+      </div>
+    </div>
 
 
-
-
-
-</div><!-- .wrapper -->
-
-    <!-- Footer==================================================-->
-    <footer class="footer">
-  <strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
-</footer><!-- .footer -->
-
+    </div>
+    <footer>qqq</footer>
   </div>
+  <script type="text/javascript">
+    var nav = document.getElementById("topNav");
+    var main = document.getElementById("main");
+    var menu = document.getElementsByClassName("menuitems");
+    var close = document.getElementById("closebtn");
+
+    //default to measure if/else from
+    nav.style.height = "50px";
+    main.style.marginTop = "50px";
+    for (i = 0; i < menu.length; i++) { menu[i].style.marginTop = "100px"; };
+
+    close.addEventListener("click", function () {
+      var menuIcon = close.children;
+      for (i = 0; i < menuIcon.length; i++) {
+        menuIcon[i].classList.toggle("active");
+      }
+    });
+
+    function navToggle() {
+      //to close
+      if (nav.style.height <= "275px") {
+        nav.style.height = "50px";
+        main.style.marginTop = "50px";
+
+        var i = 0;
+        for (i = 0; i < menu.length; i++) {
+          menu[i].style.opacity = "0.0";
+          menu[i].style.marginTop = "100px";
+        };
+        document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+
+      }
+      //to open
+      else if (nav.style.height <= "50px") {
+        nav.style.height = "275px";
+        main.style.marginTop = "275px";
+        var i = 0;
+        for (i = 0; i < menu.length; i++) {
+          menu[i].style.opacity = "1.0";
+          menu[i].style.marginTop = "0px";
+        };
+
+
+      }
+
+    };
+  </script>
 </body>
