@@ -38,8 +38,9 @@ ul li{
     padding: 15px;
 }
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
+
+@media only screen and (min-width: 320px) {
+    /* For mobile and tablet: */
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
     .col-m-3 {width: 25%;}
@@ -53,7 +54,7 @@ ul li{
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -65,8 +66,7 @@ ul li{
     .col-8 {width: 66.66%;}
     .col-9 {width: 75%;}
     .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    
 }
 
 body{
@@ -74,6 +74,7 @@ body{
   font-size: 14px;
   line-height: 1.42857143;
   color: #6b6b6b;
+    
   background-color: #fff;
 }
 
@@ -102,7 +103,6 @@ margin: 0 auto;
 .navigation_full{
   float: left;
   line-height: 56px;
-  inline-block;
   position: relative;
   left: 13%;
 }
@@ -296,15 +296,6 @@ header .hidden-sm{
   font-size: 20px;
 }
 
-
-@media only screen and (max-width: 1024px){
-  .header_toggle{display: block;}
-  .header_full{display: none;}
-}
-@media only screen and (min-width: 1024px){
-  #main{margin-top: 10px!important;}
-}
-
 #main { 
     transition: margin-top .4s;
 }
@@ -316,6 +307,7 @@ header .hidden-sm{
 
 .group_navigation .material-icons{
   float: none;
+  color: #b52f54;
 }
 .group_navigation ul li{
   display: inline-block;
@@ -364,12 +356,16 @@ header .hidden-sm{
 }
 iframe{
   width: 100%;
-  height: auto;
+  height: 640px;
 }
 /*aside*/
 .contacts, .notification{
   border: 1px solid #eee;
   margin-bottom: 20px;
+}
+
+.contacts .conteiner_name, .notification .conteiner_name{
+ padding: 2% 6%;
 }
 
 .aside img{
@@ -446,9 +442,20 @@ iframe{
   vertical-align: middle;
 }
 
+.add-wearer p{
+  position: relative;
+  top:10px;
+  left: 20px;
+}
+
 .person_massage{
   padding: 2% 6%;
   border-bottom: 1px solid #eee;
+}
+
+.action_time p{
+  float: left;
+  margin-right: 10px;
 }
 
  .massage{
@@ -462,15 +469,21 @@ iframe{
 .notification .action_time .lens{
   font-size: 7px;
   color: #6b6b6b;
-  margin-left: 34px;
+  position: relative;
+  top:8px;
 }
 
 .add_title{
   height: 80px;
   border: 2px dashed #eee;
-  text-align: center;
+  padding: 6% 34%;
+  cursor: pointer;
   vertical-align: middle;
-  line-height: 80px;
+}
+.add_title p{
+  position: relative;
+  top: 4px;
+  left: 10px;
 }
 .add_title span{
   color: #6b6b6b;
@@ -479,5 +492,95 @@ iframe{
 
 
 footer{
-  background-color: grey;
+  padding: 2% 1%;
+}
+
+footer p{
+  float: left;
+  margin-right: 2%;
+}
+
+@media only screen and (max-width: 1024px){
+  .header_toggle{display: block;}
+  .header_full{display: none;}
+  [class*="col-"] {
+    float: left;
+    padding: 15px;}
+  #main{margin-top:70px!important;}
+  .contacts .conteiner_name, .row .conteiner_name{
+    height: 60px;
+    padding: 1% 10px !important;
+  }
+  .contacts .conteiner_name p, .row .conteiner_name p{
+    font-size: 24px;
+  }
+  .contacts .option, .option_person .option, .notification .option_person{
+    height: 60px;
+    font-size: 20px;
+  }
+  .contacts .conteiner_navigations span, .row .map_navigations span, .notification .conteiner_navigations span{
+    font-size: 28px;
+    margin-left: 20px;
+  }
+  .row .map_navigations span{
+    margin-top: 10px;
+  }
+  .contacts .person{
+    padding: 1%;
+    height: 60px;
+    line-height: 60px !important;
+  }
+  .contacts .add-wearer{
+    padding: 1% !important;
+    padding-left: 23%;
+  }
+  .contacts .add-wearer p{
+    font-size: 20px;
+    top: 4px;
+  }
+  .aside .add_title {
+    padding: 2%;
+    padding-left: 4%;
+  }
+
+  .aside .add_title  span{
+    padding: 0;
+  }
+
+  .aside .add_title p{
+    top: 2px;
+    font-size: 20px;
+  }
+  #see_all{
+    text-align: center;
+    line-height: 54px;
+    font-size: 20px;
+  }
+  .notification .person_massage{
+    padding: 1%;
+    height: 60px;
+  }
+  .contacts .person button span{
+    font-size: 34px;
+  }
+
+  .contacts .person button{
+    margin-right: 10px;
+  }
+
+  .aside .contacts .person img, .notification .person_massage .foto_person img{
+    margin-left: 10px;
+    height: 44px;
+    width: 44px;
+  }
+
+  .aside .contacts .person p{
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+  }
+ 
+}
+@media only screen and (min-width: 1025px){
+  #main{margin-top: 15px!important;}
 }
